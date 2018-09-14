@@ -23,7 +23,7 @@ export default new Vuex.Store({
     // Use the spread operator to register all of the imported plugins
     ...servicePlugins,
     auth({ userService: 'users' }), // Populates user object on successful auth
-    // service('whatever'),
+    service('todos'),
   ],
 });
 
