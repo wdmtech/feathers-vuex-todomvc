@@ -1,5 +1,5 @@
 {
-  "name": "vffv",
+  "name": "vffv-client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,12 @@
     "test:e2e": "vue-cli-service test:e2e"
   },
   "dependencies": {
+    "@feathersjs/authentication-client": "^1.0.4",
+    "@feathersjs/feathers": "^3.2.1",
+    "@feathersjs/socketio-client": "^1.1.2",
+    "feathers-vuex": "^1.4.8",
     "register-service-worker": "^1.0.0",
+    "socket.io-client": "^2.1.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
