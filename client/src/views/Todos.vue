@@ -58,79 +58,79 @@
 </template>
 
 <script>
-import TodosMixin from '@/mixins/TodosMixin'
+import TodosMixin from "@/mixins/TodosMixin";
 
 // visibility filters
 let filters = {
   all(todos) {
-    return todos
+    return todos;
   },
   active(todos) {
-    return todos.filter(function (todo) {
-      return !todo.completed
-    })
+    return todos.filter(function(todo) {
+      return !todo.completed;
+    });
   },
   completed(todos) {
-    return todos.filter(function (todo) {
-      return todo.completed
-    })
+    return todos.filter(function(todo) {
+      return todo.completed;
+    });
   }
 };
 
 // handle routing
-function onHashChange () {
-  let visibility = window.location.hash.replace(/#\/?/, '');
+function onHashChange() {
+  let visibility = window.location.hash.replace(/#\/?/, "");
   if (filters[visibility]) {
-    app.visibility = visibility
+    this.visibility = visibility;
   } else {
-    window.location.hash = '';
-    app.visibility = 'all'
+    window.location.hash = "";
+    this.visibility = "all";
   }
 }
 
-window.addEventListener('hashchange', onHashChange);
+window.addEventListener("hashchange", onHashChange);
 onHashChange();
 
 export default {
-  name: 'Todos',
-  mixins: [ TodosMixin ],
+  name: "Todos",
+  mixins: [TodosMixin],
   data() {
     return {
-      newTodo: '',
+      newTodo: "",
       editedTodo: null,
-      visibility: 'all'
-    }
+      visibility: "all"
+    };
   },
   computed: {
     todos() {
-      return this.listTodos
+      return this.listTodos;
     },
     filteredTodos() {
-      return filters[this.visibility](this.todos)
+      return filters[this.visibility](this.todos);
     },
     remaining() {
-      return filters.active(this.todos).length
+      return filters.active(this.todos).length;
     },
     allDone: {
       get() {
-        return this.remaining === 0
+        return this.remaining === 0;
       },
       set(value) {
-        this.todos.forEach(function (todo) {
-          todo.completed = value
-        })
+        this.todos.forEach(function(todo) {
+          todo.completed = value;
+        });
       }
     }
   },
   filters: {
     pluralize(n) {
-      return n === 1 ? 'item' : 'items'
+      return n === 1 ? "item" : "items";
     }
   },
   directives: {
-    'todo-focus'(el, binding) {
+    "todo-focus"(el, binding) {
       if (binding.value) {
-        el.focus()
+        el.focus();
       }
     }
   },
@@ -138,25 +138,25 @@ export default {
     addTodo() {
       let value = this.newTodo && this.newTodo.trim();
       if (!value) {
-        return
+        return;
       }
 
       const { Todo } = this.$FeathersVuex;
       let todo = new Todo({ title: value, completed: false });
       todo.save({});
 
-      this.newTodo = ''
+      this.newTodo = "";
     },
     removeTodo(todo) {
       todo.remove({});
     },
     editTodo(todo) {
       this.beforeEditCache = todo.title;
-      this.editedTodo = todo
+      this.editedTodo = todo;
     },
     doneEdit(todo) {
       if (!this.editedTodo) {
-        return
+        return;
       }
       this.editedTodo = null;
       todo.title = todo.title.trim();
@@ -164,20 +164,22 @@ export default {
       todo.save({});
 
       if (!todo.title) {
-        this.removeTodo(todo)
+        this.removeTodo(todo);
       }
     },
     cancelEdit(todo) {
       this.editedTodo = null;
-      todo.title = this.beforeEditCache
+      todo.title = this.beforeEditCache;
     },
     removeCompleted() {
-      this.todos.filter(todo => todo.completed).forEach(todo => todo.remove({}))
+      this.todos
+        .filter(todo => todo.completed)
+        .forEach(todo => todo.remove({}));
     }
-  },
-}
+  }
+};
 </script>
 
 <style>
-  @import url(https://unpkg.com/todomvc-app-css@2.0.6/index.css);
+@import url(https://unpkg.com/todomvc-app-css@2.0.6/index.css);
 </style>
