@@ -90,7 +90,7 @@ export default {
         window.location.hash = "";
         this.visibility = "all";
       }
-    }
+    };
 
     window.addEventListener("hashchange", onHashChange);
     onHashChange();
