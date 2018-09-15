@@ -2,13 +2,15 @@
 
 # Feathers-vuex TodoMVC demo
 
-I built this because there seems to be a need for examples containing actual implementation of [Feathers](https://featherjs.com) with [Vue](https://vuejs.org) and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex).
+This project takes the existing Vue TodoMVC demo and adds Feathers, Vuex and Feathers-vuex awesomeness!
 
-The [Models and Instances API](https://feathers-plus.github.io/v1/feathers-vuex/model-classes.html) is used to create/remove/edit todos, and there is also an example [implementation](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/mixins/TodosMixin.js) that illustrates receiving events from the server on the client   
+I built this because there seemed to be a need for examples containing actual implementation of [Feathers](https://featherjs.com) with [Vue](https://vuejs.org) and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex).
 
-# Get started
+The [Models and Instances API](https://feathers-plus.github.io/v1/feathers-vuex/model-classes.html) is used to create/remove/edit todos, and there is also an example [implementation](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/mixins/TodosMixin.js) that illustrates receiving events from the server on the client.  
 
-Clone this repo
+# How to get started
+
+First, clone this repo
 
 `git clone git@github.com:wdmtech/feathers-vuex-todomvc.git`
 
@@ -30,4 +32,4 @@ Clone this repo
 
 # Still to do
 
-[] Filter todos using reactive live queries
+[ ] Filter todos using reactive live queries
