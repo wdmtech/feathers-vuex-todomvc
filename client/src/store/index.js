@@ -22,43 +22,7 @@ export default new Vuex.Store({
   plugins: [
     // Use the spread operator to register all of the imported plugins
     ...servicePlugins,
-    auth({ userService: 'users' }), // Populates user object on successful auth
-    service('todos'),
+    // auth({ userService: 'users' }), // Populates user object on successful auth
+    // service('another-service'),
   ],
 });
-
-feathersClient.service('auth')
-  .hooks({
-    before: {
-      all: [
-        ctx => {
-          console.log('example hook ran');
-          return ctx;
-        },
-      ],
-      find: [],
-      get: [],
-      create: [],
-      update: [],
-      patch: [],
-      remove: [],
-    },
-    after: {
-      all: [],
-      find: [],
-      get: [],
-      create: [],
-      update: [],
-      patch: [],
-      remove: [],
-    },
-    error: {
-      all: [],
-      find: [],
-      get: [],
-      create: [],
-      update: [],
-      patch: [],
-      remove: [],
-    },
-  });

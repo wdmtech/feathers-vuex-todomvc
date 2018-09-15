@@ -44,3 +44,5 @@ feathersClient.service(servicePath)
   });
 
 export default servicePlugin;
+
+console.log('users service loaded');

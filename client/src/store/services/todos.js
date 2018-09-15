@@ -43,3 +43,5 @@ feathersClient.service(servicePath)
   });
 
 export default servicePlugin;
+
+console.log('todos service loaded');
