@@ -1,3 +1,5 @@
+![logo.png](logo.png)
+
 # Feathers-vuex TodoMVC demo
 
 I built this because there seems to be a need for examples containing actual implementation of [Feathers](https://featherjs.com) with [Vue](https://vuejs.org) and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex).
