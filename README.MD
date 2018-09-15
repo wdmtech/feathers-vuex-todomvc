@@ -22,4 +22,5 @@ Clone this repo
 
 `npm install`
 
-`npm run serve`
+`npm run serve` or `vue ui` if you have [vue-cli 3](https://cli.vuejs.org/) or later
+
