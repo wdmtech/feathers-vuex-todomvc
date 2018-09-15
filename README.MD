@@ -34,4 +34,4 @@ Navigate to the url displayed (default `localhost:8080`) to view in your browser
 
 # Still to do - contributions welcome!
 
-- [ ] Filter todos using reactive live queries
+- [ ] Filter todos using [reactive live queries](https://feathers-plus.github.io/v1/feathers-vuex/common-patterns.html#Reactive-Lists-with-Live-Queries)
