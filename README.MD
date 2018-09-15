@@ -32,4 +32,6 @@ First, clone this repo
 
 # Still to do
 
+Contributions welcome!
+
 - [ ] Filter todos using reactive live queries
