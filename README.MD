@@ -8,7 +8,7 @@ Clone this repo
 
 `git clone git@github.com:wdmtech/feathers-vuex-todomvc.git`
 
-# Server (Feathers)
+## Server (Feathers)
 
 `cd server`
 
@@ -16,7 +16,7 @@ Clone this repo
 
 `npm run start`
 
-# Client (Vue)
+## Client (Vue)
 
 `cd client`
 
