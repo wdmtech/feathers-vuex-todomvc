@@ -1,6 +1,6 @@
 {
-  "name": "vffv-server",
-  "description": "Vue, feathers and feathers-vuex demo repo",
+  "name": "vue-feathers-feathers-vuex-todomvc-server",
+  "description": "Vue, feathers and feathers-vuex todomvc repo server",
   "version": "0.0.0",
   "homepage": "",
   "main": "src",

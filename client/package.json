@@ -1,5 +1,6 @@
 {
-  "name": "vffv-client",
+  "name": "vue-feathers-feathers-vuex-todomvc-client",
+  "description": "Vue, feathers and feathers-vuex todomvc repo client",
   "version": "0.1.0",
   "private": true,
   "scripts": {
