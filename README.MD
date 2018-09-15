@@ -4,9 +4,9 @@
 
 This project takes the existing [Vue](https://vuejs.org) [TodoMVC demo](https://vuejs.org/v2/examples/todomvc.html) and adds [Feathers](https://featherjs.com), and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex) awesomeness!
 
-I built this because there seemed to be a need for examples containing actual implementation of Feathers with Vue and Feathers-vuex.
-
-The [Models and Instances API](https://feathers-plus.github.io/v1/feathers-vuex/model-classes.html) is used to create/remove/edit todos, and there is also an example [implementation](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/mixins/TodosMixin.js) that illustrates receiving events from the server on the client.  
+In short, this stack makes it really simple to get reactive updates in Vue from a Feathers.js server, through Vuex.
+ 
+It’s a beautiful combination of full-stack tech.
 
 # How to get started
 
@@ -35,3 +35,11 @@ Navigate to the url displayed (default `localhost:8080`) to view in your browser
 # Still to do - contributions welcome!
 
 - [ ] Filter todos using [reactive live queries](https://feathers-plus.github.io/v1/feathers-vuex/common-patterns.html#Reactive-Lists-with-Live-Queries)
+
+# Why?
+
+I built this because there seemed to be a need for examples containing actual implementation of Feathers with Vue and Feathers-vuex.
+
+# Further information
+
+The [Models and Instances API](https://feathers-plus.github.io/v1/feathers-vuex/model-classes.html) is used to create/remove/edit todos, and there is also an example [implementation](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/mixins/TodosMixin.js) that illustrates receiving events from the server on the client.  
