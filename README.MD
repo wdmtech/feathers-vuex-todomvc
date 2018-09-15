@@ -2,9 +2,9 @@
 
 # Feathers-vuex TodoMVC demo
 
-This project takes the existing Vue TodoMVC demo and adds Feathers, Vuex and Feathers-vuex awesomeness!
+This project takes the existing [Vue]([Vue](https://vuejs.org)) [TodoMVC demo](https://vuejs.org/v2/examples/todomvc.html) and adds [Feathers](https://featherjs.com), and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex) awesomeness!
 
-I built this because there seemed to be a need for examples containing actual implementation of [Feathers](https://featherjs.com) with [Vue](https://vuejs.org) and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex).
+I built this because there seemed to be a need for examples containing actual implementation of Feathers with Vue and Feathers-vuex.
 
 The [Models and Instances API](https://feathers-plus.github.io/v1/feathers-vuex/model-classes.html) is used to create/remove/edit todos, and there is also an example [implementation](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/mixins/TodosMixin.js) that illustrates receiving events from the server on the client.  
 
