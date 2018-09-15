@@ -2,7 +2,7 @@
 
 # Feathers-vuex TodoMVC demo
 
-This project takes the existing [Vue]([Vue](https://vuejs.org)) [TodoMVC demo](https://vuejs.org/v2/examples/todomvc.html) and adds [Feathers](https://featherjs.com), and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex) awesomeness!
+This project takes the existing [Vue](https://vuejs.org) [TodoMVC demo](https://vuejs.org/v2/examples/todomvc.html) and adds [Feathers](https://featherjs.com), and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex) awesomeness!
 
 I built this because there seemed to be a need for examples containing actual implementation of Feathers with Vue and Feathers-vuex.
 
