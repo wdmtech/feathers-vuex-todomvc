@@ -53,6 +53,7 @@
         <a href="https://feathers-plus.github.io/v1/feathers-vuex" target="_blank">feathers-vuex</a> and
         <a href="https://feathersjs.com" target="_blank">feathers</a>
       </p>
+      <p>Source <a href="https://github.com/wdmtech/feathers-vuex-todomvc" target="_blank">View on GitHub</a></p>
     </footer>
   </div>
 </template>
