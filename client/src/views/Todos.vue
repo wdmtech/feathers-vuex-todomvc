@@ -77,23 +77,24 @@ let filters = {
   }
 };
 
-// handle routing
-function onHashChange() {
-  let visibility = window.location.hash.replace(/#\/?/, "");
-  if (filters[visibility]) {
-    this.visibility = visibility;
-  } else {
-    window.location.hash = "";
-    this.visibility = "all";
-  }
-}
-
-window.addEventListener("hashchange", onHashChange);
-onHashChange();
-
 export default {
   name: "Todos",
   mixins: [TodosMixin],
+  mounted() {
+    // handle routing
+    const onHashChange = () => {
+      let visibility = window.location.hash.replace(/#\/?/, "");
+      if (filters[visibility]) {
+        this.visibility = visibility;
+      } else {
+        window.location.hash = "";
+        this.visibility = "all";
+      }
+    }
+
+    window.addEventListener("hashchange", onHashChange);
+    onHashChange();
+  },
   data() {
     return {
       newTodo: "",
