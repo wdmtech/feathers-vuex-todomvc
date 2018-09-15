@@ -2,7 +2,7 @@
 
 I built this because there seems to be a need for examples containing actual implementation of Feathers with Vue and Feathers-vuex.
 
-# Running instructions
+# Get started
 
 Clone this repo
 
