@@ -1,7 +1,5 @@
 ![logo.png](logo.png)
 
-![preview.png](preview.png)
-
 # Feathers-vuex TodoMVC demo
 
 This project takes the existing [Vue](https://vuejs.org) [TodoMVC demo](https://vuejs.org/v2/examples/todomvc.html) and adds [Feathers](https://featherjs.com), and [Feathers-vuex](https://feathers-plus.github.io/v1/feathers-vuex) awesomeness!
@@ -32,7 +30,9 @@ First, clone this repo
 
 `npm run serve` or `vue ui` if you have [vue-cli 3](https://cli.vuejs.org/) or later.
 
-Navigate to the url displayed (default `localhost:8080`) to view in your browser.
+Navigate to the url displayed (default `localhost:8080`) to view in your browser:
+
+![preview.png](preview.png)
 
 # Still to do - contributions welcome!
 
