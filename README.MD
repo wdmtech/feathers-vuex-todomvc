@@ -44,4 +44,20 @@ I built this because there seemed to be a need for examples containing actual im
 
 # Further information
 
+## CRUD operations in the UI
+
 The [Models and Instances API](https://feathers-plus.github.io/v1/feathers-vuex/model-classes.html) is used to create/remove/edit todos, and there is also an example [implementation](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/mixins/TodosMixin.js) that illustrates receiving events from the server on the client.  
+
+##`todos` service
+
+### &hellip;on the client
+
+The service is defined in feathers-vuex: [./client/src/store/services/todos.js](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/store/services/todos.js)
+
+This is then loaded by the store: [./client/src/store/index.js](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/client/src/store/index.js)
+
+### &hellip;on the server
+
+#### Initial todo data
+
+The `todos` service is seeded with some initial data, in [./server/src/services/todos/todos.service.js](https://github.com/wdmtech/feathers-vuex-todomvc/blob/master/server/src/services/todos/todos.service.js)
