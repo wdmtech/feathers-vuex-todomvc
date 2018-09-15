@@ -32,4 +32,4 @@ First, clone this repo
 
 # Still to do
 
-[ ] Filter todos using reactive live queries
+- [ ] Filter todos using reactive live queries
