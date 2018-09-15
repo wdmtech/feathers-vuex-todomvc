@@ -28,10 +28,10 @@ First, clone this repo
 
 `npm install`
 
-`npm run serve` or `vue ui` if you have [vue-cli 3](https://cli.vuejs.org/) or later
+`npm run serve` or `vue ui` if you have [vue-cli 3](https://cli.vuejs.org/) or later.
 
-# Still to do
+Navigate to the url displayed (default `localhost:8080`) to view in your browser.
 
-Contributions welcome!
+# Still to do - contributions welcome!
 
 - [ ] Filter todos using reactive live queries
