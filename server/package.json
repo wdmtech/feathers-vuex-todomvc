@@ -7,15 +7,10 @@
   "keywords": [
     "feathers"
   ],
-  "author": {
-    "name": "Will Murray",
-    "email": "willdavidmurray@gmail.com"
-  },
+  "author": "Will Murray <willdavidmurray@gmail.com>",
   "contributors": [],
-  "bugs": {},
   "directories": {
-    "lib": "src",
-    "test": "test/"
+    "test": "test"
   },
   "engines": {
     "node": "^8.0.0",
@@ -26,7 +21,8 @@
     "eslint": "eslint src/. test/. --config .eslintrc.json",
     "dev": "nodemon src/",
     "start": "node src/",
-    "mocha": "mocha test/ --recursive --exit"
+    "mocha": "mocha test/ --recursive --exit",
+    "upgrade-interactive": "npm-check --update"
   },
   "dependencies": {
     "@feathersjs/configuration": "^2.0.2",
@@ -48,5 +44,6 @@
     "nodemon": "^1.18.4",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"
-  }
+  },
+  "license": "ISC"
 }
